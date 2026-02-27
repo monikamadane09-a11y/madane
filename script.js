@@ -1,16 +1,10 @@
-let count = 0;
+function addNumbers() {
+    var n1 = document.getElementById("num1").value;
+    var n2 = document.getElementById("num2").value;
 
-function increase() {
-    count++;
-    document.getElementById("count").innerText = count;
+    var sum = Number(n1) + Number(n2);
+
+    document.getElementById("result").innerHTML = 
+        "Result: " + sum;
 }
 
-function decrease() {
-    count--;
-    document.getElementById("count").innerText = count;
-}
-
-function reset() {
-    count = 0;
-    document.getElementById("count").innerText = count;
-}
